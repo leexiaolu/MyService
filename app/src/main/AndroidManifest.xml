@@ -16,6 +16,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- service -->
+        <service android:name=".MyService">
+            <intent-filter >
+                <action android:name="com.example.leesnriud.myservice.MY_SERVICE"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".MyService2">
+            <intent-filter >
+                <action android:name="com.example.leesnriud.myservice.MY_SERVICE2"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyService3"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.example.leesnriud.myservice.MY_SERVICE3"/>
+            </intent-filter>
+        </service>
+        <service android:name=".MyService4">
+            <intent-filter>
+                <action android:name="com.example.leesnriud.myservice.MY_SERVICE4"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
