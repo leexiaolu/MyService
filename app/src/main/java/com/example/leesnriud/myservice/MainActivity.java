@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.bt_startservice, R.id.bt_stopservice, R.id.bt_servicebind,
-            R.id.bt_servicecancel, R.id.bt_statusservice,R.id.bt_services,R.id.bt_ntfservice})
+            R.id.bt_servicecancel, R.id.bt_statusservice,R.id.bt_services,R.id.bt_ntfservice,R.id.bt_service_receiver})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.bt_startservice:
@@ -118,6 +118,11 @@ public class MainActivity extends AppCompatActivity {
                 intent4.setPackage(getPackageName());
                 startService(intent4);
                 break;
+            case R.id.bt_service_receiver:
+                Intent intent5 = new Intent();
+                intent5.setAction("com.example.leesnriud.myservice.MY_SERVICE5");
+                intent5.setPackage(getPackageName());
+                startService(intent5);
         }
     }
 }

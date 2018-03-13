@@ -66,6 +66,12 @@
             android:text="简单前台服务实现"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        <Button
+            android:layout_margin="5dp"
+            android:text="简单定时后台线程实现"
+            android:id="@+id/bt_service_receiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
